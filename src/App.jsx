@@ -15,9 +15,19 @@ function App() {
 
   
   const [inputValue, setInputValue] = useState("")
-
+  const [genreValue, setGenreValue] = useState("")
+  const [streamingValue, setStreamingValue] = useState("")
+  
   const handlechange = (e) => {
     setInputValue(e.target.value)
+  }
+
+  const handleGenreChange = (e) => {
+    setGenreValue(e.target.value)
+  }
+
+  const handleStreamingChange = (e) => {
+    setStreamingValue(e.target.value)
   }
 
   return (
@@ -32,7 +42,7 @@ function App() {
     </Route>
     </Switch>
     </Router>
-    <InputModal inputValue={inputValue} handlechange={handlechange}/>
+    <InputModal inputValue={inputValue} genreValue={genreValue} streamingValue={streamingValue} handlechange={handlechange} handleGenreChange={handleGenreChange} handleStreamingChange={handleStreamingChange}/>
     </>
   );
 }

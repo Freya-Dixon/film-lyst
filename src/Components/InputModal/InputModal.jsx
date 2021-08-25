@@ -8,7 +8,7 @@ const InputModal = (props) => {
                 <label htmlFor=""> Film Name </label>
                 <input type="text" className={styles.textInput} placeholder="Film" onChange={props.handlechange} />
                 <label htmlFor=""> Genre </label>
-           <select name="genres" id="genres" className={styles.dropdown} onChange={props.handlechange}>
+           <select name="genres" id="genres" className={styles.dropdown} onChange={props.handleGenreChange}>
            <option value="drama" onChange={props.handleChange}> Drama </option>
            <option value="comedy">Comedy</option>
            <option value="sciFi">Sci-Fi</option>
@@ -23,7 +23,7 @@ const InputModal = (props) => {
 
 
            <label htmlFor=""> Streaming Service </label>
-           <select name="streaming" id="steaming" className={styles.dropdown}>
+           <select name="streaming" id="steaming" className={styles.dropdown} onChange={props.handleStreamingChange} >
            <option value="netflix">Netflix</option>
            <option value="amazonPrime">Amazon Prime</option>
            <option value="nowTv">Now Tv</option>
