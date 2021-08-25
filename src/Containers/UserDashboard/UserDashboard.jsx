@@ -12,14 +12,16 @@ const UserDashboard = (props) => {
         <div></div>
         <section className={styles.dashboardOverview}>
                 <div>
-                <SideContainer />
-               
-                <InputModal inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handlechange={props.handlechange} handleGenreChange={props.handleGenreChange}/>
+                <SideContainer />    
                 </div>
                 <div>
                 <FilmList />
-                </div>                
+                </div> 
+                <div className={styles.modalWrapper}>
+                <InputModal inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handlechange={props.handlechange} handleGenreChange={props.handleGenreChange}/>            
+                </div>
         </section>
+
         </>
 
     )

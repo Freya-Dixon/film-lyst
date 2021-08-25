@@ -1,13 +1,14 @@
 .modalWrapper {
-    margin: 0 auto;
-    width: 30vw;
+    margin: 0;
+    width: 20vw;
     height: 45vh;
-    padding: 5vh;
+    margin-left: 5vh;
+    padding: 7vh;
     border: 1px solid salmon;
-    border-radius:20px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(214, 15, 240, 0.2) 0px 7px 29px 0px;
+    justify-content: baseline;
 }
 .dropdown {
     margin-top: 1vh;
@@ -20,9 +21,9 @@
     border-radius: 10px;
 }
 .textInput {
-    width: 20vw;
+    width: 15vw;
     height: 3vh;
-    padding: 1vh;
+    padding: 1.5vh;
     border-radius: 10px;
     color: salmon;
     margin-bottom: 1vh;

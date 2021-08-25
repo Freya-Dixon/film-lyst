@@ -2,17 +2,21 @@
 .dashboardOverview {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
     grid-gap: 10px;
     font-family: 'Spartan', sans-serif;
     color: white;
-    width: 100vw;
+    width: 90vw;
     height: 90vh;
 
    
 }
-
+.modalWrapper {
+    margin: 0 auto;
+    grid-column: 2;
+    margin-top: 10vh;
+}
 .headings {
    margin: 0;
     width: 20vw;

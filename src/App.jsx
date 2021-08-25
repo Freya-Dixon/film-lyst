@@ -29,7 +29,7 @@ function App() {
   const handleStreamingChange = (e) => {
     setStreamingValue(e.target.value)
   }
-
+  
   return (
     <>
     <Router>
@@ -42,7 +42,6 @@ function App() {
     </Route>
     </Switch>
     </Router>
-    {/* <InputModal  handleStreamingChange={handleStreamingChange}/> */}
     </>
   );
 }
