@@ -1,0 +1,46 @@
+import React from 'react'
+import styles from './InputModal.module.scss'
+const InputModal = () => {
+    return (
+        <section >
+            <form action="" className={styles.modalWrapper}>
+             <h3>Add a film</h3>
+                <label htmlFor=""> Film Name </label>
+                <input type="text" className={styles.textInput}/>
+            
+                <label htmlFor=""> Genre </label>
+           <select name="genres" id="genres" className={styles.dropdown}>
+           <option value="drama"> Drama </option>
+           <option value="comedy">Comedy</option>
+           <option value="sciFi">Sci-Fi</option>
+           <option value="animation">Animation</option>
+           <option value="romance">Romance</option>
+           <option value="musical">Musical</option>
+           <option value="horror">Horror</option>
+           <option value="western">Western</option>
+           <option value="thriller">Thriller</option>
+           <option value="documentary">Documentary</option>
+           </select>
+
+
+           <label htmlFor=""> Streaming Service </label>
+           <select name="streaming" id="steaming" className={styles.dropdown}>
+           <option value="netflix">Netflix</option>
+           <option value="amazonPrime">Amazon Prime</option>
+           <option value="nowTv">Now Tv</option>
+           <option value="disneyPlus">Disney +</option>
+           <option value="bfiPlayer">BFI Player</option>
+           <option value="mubi">Mubi</option>
+           <option value="iplayer">Iplayer</option>
+           </select>
+      
+  
+                <label htmlFor=""> Run Time </label>
+                <input type="time" min="00:00" max="05:00" className={styles.textInput}/>
+        
+            </form>
+        </section>
+    )
+}
+
+export default InputModal

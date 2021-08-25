@@ -1,0 +1,31 @@
+.modalWrapper {
+    margin: 0 auto;
+    width: 30vw;
+    height: 45vh;
+    padding: 5vh;
+    border: 1px solid salmon;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(214, 15, 240, 0.2) 0px 7px 29px 0px;
+}
+.dropdown {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 20vw;
+    height: 5vh;
+    color: salmon;
+    padding: 1vh;
+    border: 1px solid salmon;
+    border-radius: 10px;
+}
+.textInput {
+    width: 20vw;
+    height: 3vh;
+    padding: 1vh;
+    border-radius: 10px;
+    color: salmon;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    border: 1px solid salmon;
+}
