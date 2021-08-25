@@ -4,7 +4,8 @@ import FilmList from '../../Components/FilmList'
 import SideContainer from '../../Components/SideContainer'
 import UserInput from '../../Components/UserInput'
 import styles from './UserDashboard.module.scss'
-const UserDashboard = () => {
+import InputModal from '../../Components/InputModal'
+const UserDashboard = (props) => {
     return (
         <>
         <NavBar />
@@ -12,6 +13,8 @@ const UserDashboard = () => {
         <section className={styles.dashboardOverview}>
                 <div>
                 <SideContainer />
+               
+                <InputModal inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handlechange={props.handlechange} handleGenreChange={props.handleGenreChange}/>
                 </div>
                 <div>
                 <FilmList />

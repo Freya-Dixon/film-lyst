@@ -35,14 +35,14 @@ function App() {
     <Router>
     <Switch>
     <Route exact path="/">
-    <UserDashboard />
+    <UserDashboard inputValue={inputValue} genreValue={genreValue} streamingValue={streamingValue} handlechange={handlechange} handleGenreChange={handleGenreChange}/>
     </Route>
     <Route path="/tvlyst">
       <TVList/>
     </Route>
     </Switch>
     </Router>
-    <InputModal inputValue={inputValue} genreValue={genreValue} streamingValue={streamingValue} handlechange={handlechange} handleGenreChange={handleGenreChange} handleStreamingChange={handleStreamingChange}/>
+    {/* <InputModal  handleStreamingChange={handleStreamingChange}/> */}
     </>
   );
 }
