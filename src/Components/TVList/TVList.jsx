@@ -1,22 +1,23 @@
 import React from 'react'
+import FilmCard from '../../Components/FilmList/FilmCard'
+import styles from './TVList.module.scss'
+import filmData from '../../assets/filmData'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 
 const TVList = () => {
     return (
-        <div>
-        <h2>My tv watchlist</h2>
-        <ul>
-            <li></li>
-            <li>Film 2</li>
-            <li>Film 3</li>
-            <li>Film 4</li>
-            <li>Film 5</li>
-            <li>Film 6</li>
-            <li>Film 7</li>
-            <li>Film 8</li>
-            <li>Film 9</li>
-            <li>Film 10</li>
-        </ul>
-    </div>
+        <div className={styles.filmListWrapper}>
+        <h2 className={styles.subheading}>My Film Lyst <FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon></h2> 
+            <ul className={styles.filmListUl}> 
+            <FilmCard filmData={filmData[0]}/>  
+            <FilmCard filmData={filmData[2]}/>    
+            <FilmCard filmData={filmData[3]}/>  
+            <FilmCard filmData={filmData[5]}/>   
+            <FilmCard filmData={filmData[6]}/>   
+            <FilmCard filmData={filmData[7]}/>        
+            </ul>
+        </div>
     )
 }
 
