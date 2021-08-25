@@ -3,7 +3,6 @@ import FilmCard from './FilmCard'
 import {
     NavLink
    } from "react-router-dom";
-import InputModal from '../InputModal'
 import styles from './FilmList.module.scss'
 import filmData from '../../assets/filmData'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -4,7 +4,7 @@ const InputModal = (props) => {
     return (
         <section >
             <form action="" className={styles.modalWrapper}>
-             <h3>Add a film</h3>
+             <h3 className={styles.heading}>Add a film</h3>
                 <label htmlFor=""> Film Name </label>
                 <input type="text" className={styles.textInput} placeholder="Film" onChange={props.handlechange} />
                 <label htmlFor=""> Genre </label>
@@ -35,7 +35,7 @@ const InputModal = (props) => {
       
   
                 <label htmlFor=""> Run Time </label>
-                <input type="time" min="00:00" max="05:00" className={styles.textInput}/>
+                <input type="time" min="00:00" max="05:00" className={styles.time}/>
         
             </form>
         </section>
