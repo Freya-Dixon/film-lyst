@@ -1,0 +1,26 @@
+.containerWrapper {
+    margin: 0 auto;
+    width: 40vw;
+    border-radius: 20px;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.image {
+    width: 40vw;
+    border-radius: 5px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+.subheading {
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+}
+.text {
+    font-size: 1.2em;
+    color: lightgray;
+}
