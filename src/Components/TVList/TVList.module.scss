@@ -1,0 +1,59 @@
+
+
+.filmListWrapper {
+    margin: 0 auto;
+    width: 30vw;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-left: 3vw;
+    margin-top: 8vh;
+}
+.subheading {
+    width: 25vw;
+    height: 3vh;
+    margin: 0 auto;
+    font-size: 2em;
+    color: lightgray;
+    text-transform: uppercase;
+    margin-bottom: 6vh;
+    .icon {
+        color: salmon;
+        &:hover {
+            transform: scale(1.2, 1.2);
+       
+        }
+    }
+}
+.filmHeading {
+    margin: 0 auto;
+    font-size: 3em;
+
+}
+.filmListUl {
+    list-style: none;
+    height: 100%;
+    width: 40vw;
+    margin: 0;
+    border-radius: 20px;
+    padding: 1vh;
+    margin-top: 10vh;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .filmListWrapper {
+        margin: 0 auto;
+        width: 70vw;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        margin-left: 3vw;
+        margin-top: 8vh;
+    }
+}
