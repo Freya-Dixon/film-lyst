@@ -22,7 +22,7 @@ const SideContainer = () => {
                 <p className={styles.text}>{filmData[1].streaming}</p>
                 <p className={styles.text}>{filmData[1].runTime}</p>
             </div>
-            <InputModal />
+      
         </div>
         </>
     )

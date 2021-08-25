@@ -1,4 +1,4 @@
-import React from 'react'
+
 import FilmCard from '../../Components/FilmList/FilmCard'
 import styles from './TVList.module.scss'
 import filmData from '../../assets/filmData'
@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 
 const TVList = () => {
+   
     return (
         <>
         <NavBar />

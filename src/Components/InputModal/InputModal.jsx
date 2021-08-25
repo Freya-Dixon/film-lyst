@@ -1,16 +1,15 @@
 import React from 'react'
 import styles from './InputModal.module.scss'
-const InputModal = () => {
+const InputModal = (props) => {
     return (
         <section >
             <form action="" className={styles.modalWrapper}>
              <h3>Add a film</h3>
                 <label htmlFor=""> Film Name </label>
-                <input type="text" className={styles.textInput}/>
-            
+                <input type="text" className={styles.textInput} placeholder="Film" onChange={props.handlechange} />
                 <label htmlFor=""> Genre </label>
-           <select name="genres" id="genres" className={styles.dropdown}>
-           <option value="drama"> Drama </option>
+           <select name="genres" id="genres" className={styles.dropdown} onChange={props.handlechange}>
+           <option value="drama" onChange={props.handleChange}> Drama </option>
            <option value="comedy">Comedy</option>
            <option value="sciFi">Sci-Fi</option>
            <option value="animation">Animation</option>
