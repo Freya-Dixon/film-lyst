@@ -16,18 +16,17 @@ const FilmList = (props) => {
         { newFilmItem: 'film 3', quantity: 2, isSelected: false },
     ]);
 
-    // const handleAddButtonClick = () => {
-    //     const newItem = {
-    //         itemName: props.inputValue,
-    //         quantity: 1,
-    //         isSelected: false,
-    //     };
-    
-    //     const newItems = [...items, newItem];
-    
-    //     setItems(newItems);
-    //     setInputValue('');
-    // };
+    const handleAddButtonClick = () => {
+        const newItem = {
+            filmName: props.inputValue,
+            genre: props.genreValue,
+            streamingService: props.streamingValue,
+            runTime: props.runTimeValue,
+            quantity: 1,
+            isSelected: false,
+        };
+    }
+
 
     return (
         <>
