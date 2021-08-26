@@ -1,43 +1,88 @@
-import React from 'react'
 import styles from './InputModal.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import React, {useState, useEffect} from 'react';
 const InputModal = (props) => {
+    
+    const [inputValue, setInputValue] = useState("")
+    const [genreValue, setGenreValue] = useState("")
+    const [streamingValue, setStreamingValue] = useState("")
+    const [runTimeValue, setRunTimeValue] = useState("")
+
+    const handlechange = (e) => {
+        setInputValue(e.target.value)
+      }
+    
+      const handleGenreChange = (e) => {
+        setGenreValue(e.target.value)
+      }
+    
+      const handleStreamingChange = (e) => {
+        setStreamingValue(e.target.value)
+      }
+      
+      const handleTimeChange = (e) => {
+        setRunTimeValue(e.target.value)
+      }
+    
+
+    const postFilm = (e) => {
+        fetch('http://localhost:8080/film', {
+          method: 'POST', 
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            filmTitle: inputValue,
+            filmGenre: genreValue,
+            filmStreaming: streamingValue,
+            filmRuntime: runTimeValue,
+          }),
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        })
+      }
     return (
         <section >
-            <form action="" className={styles.modalWrapper}>
-             <h3 className={styles.heading}>Add a film <FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon> </h3>
+            <form onSubmit={postFilm} className={styles.modalWrapper}>
+             <h3 className={styles.heading}>Add a film </h3>
+             <button type="submit" ><FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon></button>
                 <label htmlFor=""> Film Name </label>
-                <input type="text" className={styles.textInput} placeholder="Film" onChange={props.handlechange} />
+                <input type="text" className={styles.textInput} placeholder="Film" onChange={handlechange} />
                 <label htmlFor=""> Genre </label>
-           <select name="genres" id="genres" className={styles.dropdown} onChange={props.handleGenreChange}>
-           <option value="drama" onChange={props.handleChange}> Drama </option>
-           <option value="comedy">Comedy</option>
-           <option value="sciFi">Sci-Fi</option>
-           <option value="animation">Animation</option>
-           <option value="romance">Romance</option>
-           <option value="musical">Musical</option>
-           <option value="horror">Horror</option>
-           <option value="western">Western</option>
-           <option value="thriller">Thriller</option>
-           <option value="documentary">Documentary</option>
+           <select name="genres" id="genres" className={styles.dropdown} onChange={handleGenreChange}>
+           <option value="Drama"> Drama </option>
+           <option value="Comedy">Comedy</option>
+           <option value="SciFi">Sci-Fi</option>
+           <option value="Animation">Animation</option>
+           <option value="Romance">Romance</option>
+           <option value="Musical">Musical</option>
+           <option value="Horror">Horror</option>
+           <option value="Western">Western</option>
+           <option value="Thriller">Thriller</option>
+           <option value="Documentary">Documentary</option>
            </select>
 
 
            <label htmlFor=""> Streaming Service </label>
-           <select name="streaming" id="steaming" className={styles.dropdown} onChange={props.handleStreamingChange} >
-           <option value="netflix">Netflix</option>
-           <option value="amazonPrime">Amazon Prime</option>
-           <option value="nowTv">Now Tv</option>
-           <option value="disneyPlus">Disney +</option>
-           <option value="bfiPlayer">BFI Player</option>
-           <option value="mubi">Mubi</option>
-           <option value="iplayer">Iplayer</option>
+           <select name="streaming" id="steaming" className={styles.dropdown} onChange={handleStreamingChange} >
+           <option value="Netflix">Netflix</option>
+           <option value="AmazonPrime">Amazon Prime</option>
+           <option value="Now-Tv">Now Tv</option>
+           <option value="Disney Plus">Disney +</option>
+           <option value="BFI Player">BFI Player</option>
+           <option value="Mubi">Mubi</option>
+           <option value="I Player">Iplayer</option>
            </select>
       
                 <label htmlFor=""> Run Time </label>
                 <input type="time" min="00:00" max="05:00" className={styles.time} onChange={props.handleTimeChange}/>
-        
+
             </form>
         </section>
     )

@@ -11,17 +11,13 @@ import UserDashboard from './Containers/UserDashboard'
 import TVList from './Components/TVList'
 import FilmList from './Components/FilmList'
 import FilmCard from './Components/FilmList/FilmCard'
+import filmData from './assets/filmData';
 
 function App() {
 
-
-   
-  const [inputValue, setInputValue] = useState("")
-  const [genreValue, setGenreValue] = useState("")
-  const [streamingValue, setStreamingValue] = useState("")
-  const [runTimeValue, setRunTimeValue] = useState("")
   const [films, setFilms] = useState([])
 
+ 
   useEffect(() => {
     fetch('http://localhost:8080/films')
     .then(res => res.json())
@@ -31,39 +27,24 @@ function App() {
     })
   }, []);
 
-  useEffect(() => {
-    fetch('http://localhost:8080/film', {
-      method: 'POST', 
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    })
-  }, [])
-  
 
-  const handlechange = (e) => {
-    setInputValue(e.target.value)
-  }
+    // useEffect(() => {
+  //   fetch('http://localhost:8080/film/{filmId}', {
+  //     method: 'DELETE', 
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(filmOutput),
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     console.log('Success:', data);
+  //   })
+  //   .catch((error) => {
+  //     console.error('Error:', error);
+  //   })
+  // }, [])
 
-  const handleGenreChange = (e) => {
-    setGenreValue(e.target.value)
-  }
-
-  const handleStreamingChange = (e) => {
-    setStreamingValue(e.target.value)
-  }
-  
-  const handleTimeChange = (e) => {
-    setRunTimeValue(e.target.value)
-  }
 
 console.log(films[0]);
 
@@ -72,10 +53,10 @@ console.log(films[0]);
     <Router>
     <Switch>
     <Route exact path="/">
-   { films && <UserDashboard films={films} inputValue={inputValue} genreValue={genreValue} streamingValue={streamingValue} handlechange={handlechange} handleStreamingChange={handleStreamingChange} handleGenreChange={handleGenreChange}
-   runTimeValue={runTimeValue} handleTimeChange={handleTimeChange}/> 
+   { films && <UserDashboard films={films} /> 
    }
     </Route>
+
     <Route path="/filmLyst">
       <TVList/>
     </Route>

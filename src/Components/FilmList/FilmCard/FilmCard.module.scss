@@ -4,7 +4,7 @@
     flex-direction: row;
     width: 40vw;
     height: 30vh;
-    padding: 1vw;
+    padding: 2vw;
     margin-bottom: 4vh;
     justify-content: space-evenly;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -14,8 +14,23 @@
       border-radius: 20px;
   }
 }
+
+.icon {
+  color: #fa8072;
+  margin: 0 auto;
+  height: 7vh;
+  width: 1vw;
+  margin-left: 1vw;
+  padding: 0 auto;
+  font-size: 1.5em;
+  &:hover {
+    transform: rotate(90deg);
+ 
+  }
+
+}
 .subheading {
-  width: 20vw;
+  width: 15vw;
 }
 .image {
     width: 20vw;

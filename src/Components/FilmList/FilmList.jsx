@@ -14,34 +14,24 @@ const FilmList = (props) => {
     return <FilmCard films={film}/>
   })
 
-
-    // const handleAddButtonClick = () => {
-    //     const newItem = {
-    //         filmTitle: props.inputValue,
-    //         filmGenre: props.genreValue,
-    //         filmStreaming: props.streamingValue,
-    //         filmRuntime: props.runTimeValue,
-    //         quantity: 1,
-    //         isSelected: false,
-    //     };
-    // }
-
-
     return (
         <>
         <div className={styles.filmListWrapper}> 
+        <article>
         <div className={styles.iconContainer}>
         <h2 className={styles.subheading}>My Film Lyst </h2> 
-        <FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon>
+        <FontAwesomeIcon className={styles.icon} icon={faPlusSquare} id="fetchData" ></FontAwesomeIcon>
         <FontAwesomeIcon className={styles.iconEdit} icon={faEdit}></FontAwesomeIcon>
         </div>
-        <InputModal  inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handleStreamingChange={props.handleStreamingChange}
-        handlechange={props.handlechange} handleGenreChange={props.handleGenreChange} runTimeValue={props.runTimeValue}  handleTimeChange={props.handleTimeChange}/>  
-            <ul className={styles.filmListUl}> 
+        <ul className={styles.filmListUl}> 
             <div className={styles.cardContainer}>
              {CardJSX}
-        </div>
+             </div>
             </ul>
+            </article>
+        <InputModal  inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handleStreamingChange={props.handleStreamingChange}
+        handlechange={props.handlechange} handleGenreChange={props.handleGenreChange} runTimeValue={props.runTimeValue}  handleTimeChange={props.handleTimeChange}/>  
+
         </div>
         </>
     )
