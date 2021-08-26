@@ -10,9 +10,6 @@ const UserDashboard = (props) => {
         <NavBar />
         <div></div>
         <section className={styles.dashboardOverview}>
-                {/* <div>
-                <SideContainer />    
-                </div> */}
                 <div>
                 <FilmList inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handleStreamingChange={props.handleStreamingChange}
         handlechange={props.handlechange} handleGenreChange={props.handleGenreChange} runTimeValue={props.runTimeValue}  handleTimeChange={props.handleTimeChange} films={props.films}/>

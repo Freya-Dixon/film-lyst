@@ -101,7 +101,7 @@ const InputModal = (props) => {
            </div>
        <div className={styles.inputContainer}>
            <div>
-           <label htmlFor=""> Release Date </label>
+           <label htmlFor=""> Release Year </label>
            <input type="text" className={styles.time} onChange={handleDateChange}/>
            </div>
            <div>

@@ -27,9 +27,10 @@ const FilmList = (props) => {
              </div>
             </ul>
             </article>
+            <article className={styles.modalContainer}>
         <InputModal  inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handleStreamingChange={props.handleStreamingChange}
         handlechange={props.handlechange} handleGenreChange={props.handleGenreChange} runTimeValue={props.runTimeValue}  handleTimeChange={props.handleTimeChange}/>  
-
+</article>
         </div>
         </>
     )
