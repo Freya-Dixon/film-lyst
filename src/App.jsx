@@ -36,18 +36,14 @@ console.log(films[0]);
     <Router>
     <Switch>
     <Route exact path="/">
-   { films && <UserDashboard films={films} /> 
-   }
+    <HomeLandingPage />
     </Route>
-
     <Route path="/filmLyst">
-      <TVList/>
+    { films && <UserDashboard films={films} /> 
+   }
     </Route>
     <Route path="/tvlyst">
       <FilmList/>
-    </Route>
-    <Route path="/home">
-     <HomeLandingPage />
     </Route>
     </Switch>
     </Router>

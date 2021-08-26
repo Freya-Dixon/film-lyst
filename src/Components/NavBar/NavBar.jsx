@@ -1,5 +1,10 @@
 import React from 'react'
 import styles from './NavBar.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+import {
+    NavLink
+  } from "react-router-dom";
 const NavBar = () => {
     return (
         <>
@@ -14,8 +19,8 @@ const NavBar = () => {
            <option> Shared Lysts</option>
           </select>
                 </li>
-                <li>Joint Lysts</li>
-                <li>View History</li>
+                <li></li>
+                <NavLink to="/" className={styles.navItem}><li><FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></li></NavLink>
             </ul>
         </div>
         </section>
