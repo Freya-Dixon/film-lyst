@@ -14,18 +14,13 @@ const FilmList = (props) => {
     return <FilmCard films={film}/>
   })
 
-    // const [items, setItems] = useState([
-    //     { newFilmItem: 'film 1', quantity: 1, isSelected: false },
-    //     { newFilmItem: 'film 2', quantity: 3, isSelected: true },
-    //     { newFilmItem: 'film 3', quantity: 2, isSelected: false },
-    // ]);
 
     // const handleAddButtonClick = () => {
     //     const newItem = {
-    //         filmName: props.inputValue,
-    //         genre: props.genreValue,
-    //         streamingService: props.streamingValue,
-    //         runTime: props.runTimeValue,
+    //         filmTitle: props.inputValue,
+    //         filmGenre: props.genreValue,
+    //         filmStreaming: props.streamingValue,
+    //         filmRuntime: props.runTimeValue,
     //         quantity: 1,
     //         isSelected: false,
     //     };
