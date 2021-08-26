@@ -19,13 +19,40 @@
     color: lightgray;
     text-transform: uppercase;
     margin-bottom: 6vh;
-    .icon {
-        color: salmon;
-        &:hover {
-            transform: scale(1.2, 1.2);
-       
-        }
+
+}
+.iconContainer {
+    margin: 0 auto;
+    padding: 3vh;
+    display: flex;
+    width: 30vw;
+    margin-left: 2vh;
+    justify-content: center;
+.icon {
+    color: salmon;
+    margin: 0;
+    height: 4.3vh;
+    width: 3vw;
+    margin-left: 1vw;
+    padding: 0 auto;
+    &:hover {
+        transform: scale(1.2, 1.2);
+   
     }
+
+}
+.iconEdit {
+    color: salmon;
+    margin: 0 auto;
+    margin-top: 0;
+    height: 4vh;
+    width: 3vw;
+    margin-left: 1vw;
+    &:hover {
+        transform: scale(1.2, 1.2);
+   
+    }
+}
 }
 .filmHeading {
     margin: 0 auto;

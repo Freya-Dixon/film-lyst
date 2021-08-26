@@ -6,7 +6,7 @@ import {
 import styles from './FilmList.module.scss'
 import filmData from '../../assets/filmData'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import { faEdit, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 import InputModal from '../InputModal'
 const FilmList = (props) => {
 
@@ -31,7 +31,11 @@ const FilmList = (props) => {
     return (
         <>
         <div className={styles.filmListWrapper}> 
-        <h2 className={styles.subheading}>My Film Lyst <FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon></h2> 
+        <div className={styles.iconContainer}>
+        <h2 className={styles.subheading}>My Film Lyst </h2> 
+        <FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon>
+        <FontAwesomeIcon className={styles.iconEdit} icon={faEdit}></FontAwesomeIcon>
+        </div>
         <InputModal  inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handleStreamingChange={props.handleStreamingChange}
         handlechange={props.handlechange} handleGenreChange={props.handleGenreChange} runTimeValue={props.runTimeValue}  handleTimeChange={props.handleTimeChange}/>  
             <ul className={styles.filmListUl}> 
