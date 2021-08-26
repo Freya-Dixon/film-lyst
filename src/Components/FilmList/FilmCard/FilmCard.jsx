@@ -12,7 +12,7 @@ const FilmCard = (props) => {
         <div className={styles.cardWrapper}>
            
             <div className={styles.textWrapper}>
-            <h3 className={styles.subheading}>{filmTitle} {filmReleaseDate}</h3>
+            <h3 className={styles.subheading}>{filmTitle} ({filmReleaseDate})</h3>
             <p className={styles.text}>{filmGenre}</p>
             <p className={styles.text}>{filmStreaming}</p>
             <p className={styles.text}>{filmRuntime}</p>

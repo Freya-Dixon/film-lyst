@@ -5,14 +5,14 @@ const SideContainer = (props) => {
     return (
         <>
         <div className={styles.containerWrapper}>
-            {/* <div className={styles.containerWrapper}>
-            <h2 className={styles.subheading}>This week's Lyst</h2>
-            <h2 className={styles.subheading}>{film[4].filmTitle} {film[4].filmReleaseDate}</h2>
+            <div className={styles.containerWrapper}>
+            {/* <h2 className={styles.subheading}>This week's Lyst</h2>
+            <h2 className={styles.subheading}>{films[4].filmTitle} {films[4].filmReleaseDate}</h2>
                 <img src={filmData[4].img} alt="" className={styles.image}/>
                 <p className={styles.text}>{filmData[4].filmGenre}</p>
                 <p className={styles.text}>{filmData[4].filmStreaming}</p>
-                <p className={styles.text}>{filmData[4].filmRuntime}</p>
-            </div>    */}
+                <p className={styles.text}>{filmData[4].filmRuntime}</p> */}
+            </div>   
         </div>
         </>
     )
