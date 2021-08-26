@@ -15,12 +15,12 @@
     font-size: 9em;
     width: 40vw;
     margin-top: 10vh;
-    color: white;
-    height: 20vh;
+    color: salmon;
+    height: 50vh;
     font-weight: bolder;
     background-color: transparent;
     background-size: contain;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 .imageContainer {
     width: 90vw;
@@ -31,10 +31,13 @@
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-    background-image: url("./homeImage.png");
+    background-image: url("./2001Image.jpeg");
     background-size: contain;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+}
+.navItem {
+    background-color: transparent;
 }
 .loginWrapper {
     margin: 0 auto;
@@ -69,7 +72,7 @@
     margin-top: 1vh;
     border-radius: 5px;
     color: whitesmoke;
-    border: 2px solid salmon;
+    border: 2px solid white;
     background-color: transparent;
     border-radius: 10px;
     font-size: 1em;
@@ -97,8 +100,9 @@
     font-size: 1.5em;
     border-radius: 10px;
     padding: 2vh;
+    font-weight: bolder;
     color: white;
-    border: 2px solid salmon;
+    border: 2px solid white;
     background-color: transparent;
     font-weight: bolder;
     box-shadow: rgba(216, 14, 223, 0.849) 0px 22px 70px 4px;
@@ -115,7 +119,7 @@
     flex-direction: column;
     height: 60vh;
     color: white;
-    background-color: transparent;
+    // background-color: salmon;
     box-shadow: rgba(100, 19, 250, 0.603) 0px 22px 70px 4px;
  
     

@@ -2,17 +2,24 @@ import styles from './InputModal.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 import React, {useState, useEffect} from 'react';
-const InputModal = (props) => {
+const InputModal = () => {
     
     const [inputValue, setInputValue] = useState("")
+    let   [idValue, setIdValue] = useState(82)
     const [genreValue, setGenreValue] = useState("")
     const [streamingValue, setStreamingValue] = useState("")
     const [runTimeValue, setRunTimeValue] = useState("")
     const [filmReleaseValue, setfilmReleaseValue] = useState("")
     const [filmImageValue, setfilmImageValue] = useState("")
 
+    function getRandom() {
+      return Math.random();
+    }
+
     const handlechange = (e) => {
+
         setInputValue(e.target.value)
+        setIdValue()
       }
     
       const handleGenreChange = (e) => {
@@ -42,6 +49,7 @@ const InputModal = (props) => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
+            filmId: idValue,
             filmTitle: inputValue,
             filmGenre: genreValue,
             filmStreaming: streamingValue,

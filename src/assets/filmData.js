@@ -2,14 +2,14 @@
 const filmData =  [
     { "filmTitle": "Interstellar (2014)" ,
        "filmGenre": "Sci-Fi",
-    //    "img": "https://miro.medium.com/max/1400/1*9UtTHaYSZrVtIS8WVzZJog.jpeg",
+    //    "filmImage": "https://miro.medium.com/max/1400/1*9UtTHaYSZrVtIS8WVzZJog.jpeg",
        "filmStreaming": "Amazon Prime",
        "filmReleaseDate": "2014",
        "filmRuntime": "2:55",
  },
  { "filmTitle": "Melancholia" ,
  "filmGenre": "Drama",
-//  "img": "https://entertainment.time.com/wp-content/uploads/sites/3/2011/11/melancholia.jpg?w=720&h=480&crop=1",
+//  "filmImage": "https://entertainment.time.com/wp-content/uploads/sites/3/2011/11/melancholia.jpg?w=720&h=480&crop=1",
  "filmStreaming": "Amazon Prime",
  "filmReleaseDate": "2011",
  "filmRunTime": "2:16"
