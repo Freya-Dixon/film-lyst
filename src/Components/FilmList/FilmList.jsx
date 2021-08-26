@@ -20,8 +20,6 @@ const FilmList = (props) => {
         <article>
         <div className={styles.iconContainer}>
         <h2 className={styles.subheading}>My Film Lyst </h2> 
-        <FontAwesomeIcon className={styles.icon} icon={faPlusSquare} id="fetchData" ></FontAwesomeIcon>
-        <FontAwesomeIcon className={styles.iconEdit} icon={faEdit}></FontAwesomeIcon>
         </div>
         <ul className={styles.filmListUl}> 
             <div className={styles.cardContainer}>

@@ -34,7 +34,7 @@ const FilmCard = (props) => {
 
     return (
         <div className={styles.cardWrapper}>
-            <button onClick={deleteFilm}> <FontAwesomeIcon className={styles.icon} icon={faMinusSquare} id="deleteData" ></FontAwesomeIcon></button>
+            <button onClick={deleteFilm} className={styles.submitButton}> <FontAwesomeIcon className={styles.icon} icon={faMinusSquare} id="deleteData" ></FontAwesomeIcon></button>
             <div className={styles.textWrapper}>
             <h3 className={styles.subheading}>{filmTitle} ({filmReleaseDate})</h3>
             <p className={styles.text}>{filmGenre}</p>

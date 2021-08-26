@@ -61,11 +61,17 @@ const InputModal = (props) => {
     return (
         <section >
             <form onSubmit={postFilm} className={styles.modalWrapper}>
+                <div className={styles.headingWrapper}>
              <h3 className={styles.heading}>Add a film </h3>
-             <button type="submit" ><FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon></button>
+             <button type="submit" className={styles.submitButton}><FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon></button>
+             </div>
                 <label htmlFor=""> Film Name </label>
                 <input type="text" className={styles.textInput} placeholder="Film" onChange={handlechange} />
-                <label htmlFor=""> Genre </label>
+ 
+            <div className={styles.dropdownContainer}>
+ 
+           <div>
+           <label htmlFor=""> Genre </label>
            <select name="genres" id="genres" className={styles.dropdown} onChange={handleGenreChange}>
            <option value="Drama"> Drama </option>
            <option value="Comedy">Comedy</option>
@@ -78,9 +84,10 @@ const InputModal = (props) => {
            <option value="Thriller">Thriller</option>
            <option value="Documentary">Documentary</option>
            </select>
+           </div>
 
-
-           <label htmlFor=""> Streaming Service </label>
+           <div>
+           <label htmlFor="">Streaming </label>
            <select name="streaming" id="steaming" className={styles.dropdown} onChange={handleStreamingChange} >
            <option value="Netflix">Netflix</option>
            <option value="AmazonPrime">Amazon Prime</option>
@@ -90,16 +97,20 @@ const InputModal = (props) => {
            <option value="Mubi">Mubi</option>
            <option value="I Player">Iplayer</option>
            </select>
-
-           <label htmlFor=""> Film Release Date </label>
-           <input type="text" className={styles.textInput} onChange={handleDateChange}/>
-
-           <label htmlFor=""> Set Image </label>
-           <input type="text" className={styles.textInput} onChange={handleImageChange}/>
-
+           </div>
+           </div>
+       <div className={styles.inputContainer}>
+           <div>
+           <label htmlFor=""> Release Date </label>
+           <input type="text" className={styles.time} onChange={handleDateChange}/>
+           </div>
+           <div>
                 <label htmlFor=""> Run Time </label>
                 <input type="time" min="00:00" max="05:00" className={styles.time} onChange={handleTimeChange}/>
-
+                </div>
+                </div>
+                <label htmlFor=""> Set Image </label>
+           <input type="text" className={styles.textInput} onChange={handleImageChange}/>
             </form>
         </section>
     )

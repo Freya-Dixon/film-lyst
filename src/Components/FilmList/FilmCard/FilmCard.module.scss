@@ -16,18 +16,24 @@
 }
 
 .icon {
-  color: #fa8072;
+  color: salmon;
   margin: 0 auto;
-  height: 7vh;
-  width: 1vw;
-  margin-left: 1vw;
-  padding: 0 auto;
-  font-size: 1.5em;
+  width: 4vw;
+  font-size: 2em;
+  height: 4vh;
   &:hover {
-    transform: rotate(90deg);
+      transform: rotate(90deg);
  
   }
 
+}
+.submitButton {
+margin: 0;
+padding: 1vh;
+background-color: none;
+border: none;
+width: 5vw;
+margin-bottom: 1vh;
 }
 .subheading {
   width: 15vw;
