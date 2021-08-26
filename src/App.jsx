@@ -12,6 +12,7 @@ import TVList from './Components/TVList'
 import FilmList from './Components/FilmList'
 import FilmCard from './Components/FilmList/FilmCard'
 import filmData from './assets/filmData';
+import HomeLandingPage from './Containers/HomeLandingPage'
 
 function App() {
 
@@ -44,6 +45,9 @@ console.log(films[0]);
     </Route>
     <Route path="/tvlyst">
       <FilmList/>
+    </Route>
+    <Route path="/home">
+     <HomeLandingPage />
     </Route>
     </Switch>
     </Router>
