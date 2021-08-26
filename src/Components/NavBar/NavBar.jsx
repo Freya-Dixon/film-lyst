@@ -9,9 +9,9 @@ const NavBar = () => {
                 <li><h2>Reel Lyst</h2></li>
                 <li>
             <select name="lysts" id="lists" className={styles.dropdown}>
-           <option value="myList">Film Lyst</option>
-           <option value="disneyPlus">TV Lyst</option>
-           <option value="nowTV">Shared Lysts</option>
+            <option> Film Lyst</option> 
+            <option> TV Lyst </option> 
+           <option> Shared Lysts</option>
           </select>
                 </li>
                 <li>Joint Lysts</li>

@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from './InputModal.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
 const InputModal = (props) => {
     return (
         <section >
             <form action="" className={styles.modalWrapper}>
-             <h3 className={styles.heading}>Add a film</h3>
+             <h3 className={styles.heading}>Add a film <FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon></h3>
                 <label htmlFor=""> Film Name </label>
                 <input type="text" className={styles.textInput} placeholder="Film" onChange={props.handlechange} />
                 <label htmlFor=""> Genre </label>
@@ -33,9 +35,8 @@ const InputModal = (props) => {
            <option value="iplayer">Iplayer</option>
            </select>
       
-  
                 <label htmlFor=""> Run Time </label>
-                <input type="time" min="00:00" max="05:00" className={styles.time}/>
+                <input type="time" min="00:00" max="05:00" className={styles.time} onChange={props.handleTimeChange}/>
         
             </form>
         </section>

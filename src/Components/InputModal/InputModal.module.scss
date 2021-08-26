@@ -1,8 +1,9 @@
 .modalWrapper {
     margin: 0 auto;
-    width: 20vw;
-    height: 50vh;
-    padding: 5vh;
+    width: 30vw;
+    height: 45vh;
+    margin-left: 1vw;
+    padding: 4vh;
     border: 1px solid salmon;
     box-shadow: rgba(171, 9, 235, 0.555) 0px 7px 29px 0px;
     border-radius: 20px;
@@ -14,36 +15,33 @@
 }
 .heading {
     margin: 0;
-    margin-bottom: 2vh;
     font-size: 1.5em;
 }
 .dropdown {
     margin-top: 0.5vh;
-    margin-bottom: 3vh;
-    width: 16.5vw;
+    width: 21.5vw;
     height: 6vh;
+    margin-bottom: 2vh;
     color: salmon;
     padding: 1.5vh;
     border: 1px solid salmon;
     border-radius: 10px;
 }
 .textInput {
-    width: 15vw;
+    width: 20vw;
     height: 3vh;
     padding: 1.5vh;
+    margin-bottom: 2vh;
     border-radius: 10px;
     color: salmon;
-    margin-bottom: 3vh;
-    margin-top: 1vh;
     border: 1px solid salmon;
 }
 .time {
-    width: 14vw;
+    width: 20vw;
     height: 5vh;
     padding: 2.5vh;
     border-radius: 10px;
     color: salmon;
-    margin-bottom: 1vh;
-    margin-top: 1vh;
     border: 1px solid salmon;
+    margin-bottom: 4vh;
 }
