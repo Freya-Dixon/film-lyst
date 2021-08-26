@@ -8,6 +8,8 @@ const InputModal = (props) => {
     const [genreValue, setGenreValue] = useState("")
     const [streamingValue, setStreamingValue] = useState("")
     const [runTimeValue, setRunTimeValue] = useState("")
+    const [filmReleaseValue, setfilmReleaseValue] = useState("")
+    const [filmImageValue, setfilmImageValue] = useState("")
 
     const handlechange = (e) => {
         setInputValue(e.target.value)
@@ -25,7 +27,14 @@ const InputModal = (props) => {
         setRunTimeValue(e.target.value)
       }
     
+      const handleDateChange = (e) => {
+        setfilmReleaseValue(e.target.value)
+      }
 
+
+      const handleImageChange = (e) => {
+        setfilmImageValue(e.target.value)
+      }
     const postFilm = (e) => {
         fetch('http://localhost:8080/film', {
           method: 'POST', 
@@ -36,7 +45,9 @@ const InputModal = (props) => {
             filmTitle: inputValue,
             filmGenre: genreValue,
             filmStreaming: streamingValue,
+            filmReleaseDate: filmReleaseValue,
             filmRuntime: runTimeValue,
+            filmImage: filmImageValue,
           }),
         })
         .then(response => response.json())
@@ -79,9 +90,15 @@ const InputModal = (props) => {
            <option value="Mubi">Mubi</option>
            <option value="I Player">Iplayer</option>
            </select>
-      
+
+           <label htmlFor=""> Film Release Date </label>
+           <input type="text" className={styles.textInput} onChange={handleDateChange}/>
+
+           <label htmlFor=""> Set Image </label>
+           <input type="text" className={styles.textInput} onChange={handleImageChange}/>
+
                 <label htmlFor=""> Run Time </label>
-                <input type="time" min="00:00" max="05:00" className={styles.time} onChange={props.handleTimeChange}/>
+                <input type="time" min="00:00" max="05:00" className={styles.time} onChange={handleTimeChange}/>
 
             </form>
         </section>

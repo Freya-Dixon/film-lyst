@@ -10,10 +10,31 @@ const FilmCard = (props) => {
             filmReleaseDate,
             filmRuntime,
             filmImage,
+            filmId
            } = props.films
+
+           const deleteFilm = () => {
+            fetch(`http://localhost:8080/film/${filmId}`, {
+              method: 'DELETE', 
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+              }),
+            })
+            .then(response => response.json())
+            .then(data => {
+              console.log('Success:', data);
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            })
+          }
+
+
     return (
         <div className={styles.cardWrapper}>
-                        <FontAwesomeIcon className={styles.icon} icon={faMinusSquare} id="deleteData" ></FontAwesomeIcon>
+            <button onClick={deleteFilm}> <FontAwesomeIcon className={styles.icon} icon={faMinusSquare} id="deleteData" ></FontAwesomeIcon></button>
             <div className={styles.textWrapper}>
             <h3 className={styles.subheading}>{filmTitle} ({filmReleaseDate})</h3>
             <p className={styles.text}>{filmGenre}</p>

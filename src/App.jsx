@@ -28,24 +28,6 @@ function App() {
   }, []);
 
 
-    // useEffect(() => {
-  //   fetch('http://localhost:8080/film/{filmId}', {
-  //     method: 'DELETE', 
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(filmOutput),
-  //   })
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     console.log('Success:', data);
-  //   })
-  //   .catch((error) => {
-  //     console.error('Error:', error);
-  //   })
-  // }, [])
-
-
 console.log(films[0]);
 
   return (
