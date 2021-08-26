@@ -50,15 +50,17 @@
 
 }
 .subheading {
-    margin: 0 auto;
-    font-size: 2em;
+    color: white;
+    margin: 0 ;
+    font-size: 2.5em;
     width: 15vw;
     height: 5vh;
     padding: 1vh;
+    margin-bottom: 5vh;
     background-color: transparent;
 }
 .textInput {
-    margin: 0 auto;
+    margin: 0;
     width: 15vw;
     font-family: 'Spartan', sans-serif;
     height: 2vh;
@@ -75,8 +77,8 @@
 
 }
 .inputLabel {
-    margin: 0 auto;
-    font-size: 1.5em;
+    margin: 0;
+    font-size: 1.2em;
     width: 15vw;
     height: 3vh;
     padding: 2vh;
@@ -84,16 +86,17 @@
     border-radius: 10px;
     margin-bottom: 2vh;
     color: white;
-    box-shadow: rgba(129, 18, 133, 0.644) 0px 22px 70px 4px;
+    font-weight: bolder;
+
 }
 .userEnterButton {
-    margin: 0 auto;
-    width: 16vw;
+    margin: 0;
+    width: 11vw;
     height: 8vh;
     margin-top: 5vh;
     font-size: 1.5em;
     border-radius: 10px;
-    padding: 1vh;
+    padding: 2vh;
     color: white;
     border: 2px solid salmon;
     background-color: transparent;
@@ -105,7 +108,7 @@
 .inputWrapper {
     margin: 0;
     padding: 4vh;
-    border: 2px solid salmon;
+    border: 1px solid white;
     border-radius: 20px;
     width: 20vw;
     display: flex;

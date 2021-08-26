@@ -11,10 +11,10 @@ const HomeLandingPage = () => {
                 <div className={styles.inputWrapper}>
                     <h2 className={styles.subheading}>Login</h2>
                 <label htmlFor="" className={styles.inputLabel}>Email</label>
-                <input type="text"className={styles.textInput} />
-                <label htmlFor=""  className={styles.inputLabel}>Password</label>
+                <input type="text"className={styles.textInput} placeholder="example@mail.com"/>
+                <label htmlFor=""  className={styles.inputLabel} placeholder="password">Password</label>
                 <input type="password" className={styles.textInput} />
-                <button className={styles.userEnterButton}>Enter</button>
+                <button className={styles.userEnterButton}>Login</button>
                 </div>
 
             </div>
