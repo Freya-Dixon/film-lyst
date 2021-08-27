@@ -2,11 +2,10 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    width: 45vw;
+    width: 35vw;
     height: 25vh;
-    padding: 1.5vw;
+    padding: 2vw;
     margin-bottom: 4vh;
-    justify-content: space-evenly;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     &:hover {
       transform: scale(1.1, 1.1);
@@ -33,13 +32,14 @@ padding: 1vh;
 background-color: none;
 border: none;
 width: 5vw;
+height: 20vh;
 margin-bottom: 1vh;
 }
 .subheading {
-  width: 15vw;
+  width: 10vw;
 }
 .image {
-    width: 17vw;
+    width: 15vw;
     height: 25vh;
     border-radius: 5%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

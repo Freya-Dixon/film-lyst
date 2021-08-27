@@ -13,13 +13,16 @@
 .heading {
     margin: 0;
     font-size: 9em;
-    width: 40vw;
+    width: 30vw;
     margin-top: 10vh;
-    color: salmon;
+    color: rgb(250, 100, 83);
     height: 50vh;
     font-weight: bolder;
     background-color: transparent;
     background-size: contain;
+    outline: none;
+    font-weight: 1000;
+
 
 }
 .imageContainer {
@@ -30,9 +33,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
     background-image: url("./2001Image.jpeg");
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
@@ -69,7 +73,6 @@
     height: 2vh;
     padding: 2vh;
     margin-bottom: 2vh;
-    margin-top: 1vh;
     border-radius: 5px;
     color: whitesmoke;
     border: 2px solid white;
@@ -77,6 +80,11 @@
     border-radius: 10px;
     font-size: 1em;
     box-shadow: rgba(129, 18, 133, 0.644) 0px 22px 70px 4px;
+
+    :focus {
+        background: transparent;
+        border: 2px solid white;
+      }
 
 }
 .inputLabel {
@@ -87,7 +95,7 @@
     padding: 2vh;
     background-color: transparent;
     border-radius: 10px;
-    margin-bottom: 2vh;
+
     color: white;
     font-weight: bolder;
 
@@ -101,19 +109,19 @@
     border-radius: 10px;
     padding: 2vh;
     font-weight: bolder;
-    color: white;
-    border: 2px solid white;
+    color: #FA6453;
+    border: 1px solid white;
     background-color: transparent;
     font-weight: bolder;
-    box-shadow: rgba(216, 14, 223, 0.849) 0px 22px 70px 4px;
+    box-shadow: rgba(98, 131, 162) 0px 22px 70px 4px;
     font-family: 'Spartan', sans-serif;
 
 }
 .inputWrapper {
     margin: 0;
     padding: 4vh;
-    border: 1px solid white;
-    border-radius: 20px;
+    // border: 1px solid white;
+    border-radius: 10px;
     width: 20vw;
     display: flex;
     flex-direction: column;

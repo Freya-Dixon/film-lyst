@@ -49,7 +49,7 @@ const InputModal = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            filmId: idValue,
+            filmId: filmReleaseValue,
             filmTitle: inputValue,
             filmGenre: genreValue,
             filmStreaming: streamingValue,
@@ -67,7 +67,7 @@ const InputModal = () => {
         })
       }
     return (
-        <section >
+      <>
             <form onSubmit={postFilm} className={styles.modalWrapper}>
                 <div className={styles.headingWrapper}>
              <h3 className={styles.heading}>Add a film </h3>
@@ -81,14 +81,14 @@ const InputModal = () => {
            <div>
            <label htmlFor=""> Genre </label>
            <select name="genres" id="genres" className={styles.dropdown} onChange={handleGenreChange}>
-           <option value="Drama"> Drama </option>
+           <option value="Western">Western</option>
            <option value="Comedy">Comedy</option>
            <option value="SciFi">Sci-Fi</option>
            <option value="Animation">Animation</option>
            <option value="Romance">Romance</option>
            <option value="Musical">Musical</option>
            <option value="Horror">Horror</option>
-           <option value="Western">Western</option>
+           <option value="Drama"> Drama </option>
            <option value="Thriller">Thriller</option>
            <option value="Documentary">Documentary</option>
            </select>
@@ -103,7 +103,7 @@ const InputModal = () => {
            <option value="Disney Plus">Disney +</option>
            <option value="BFI Player">BFI Player</option>
            <option value="Mubi">Mubi</option>
-           <option value="I Player">Iplayer</option>
+           <option value="IPlayer">Iplayer</option>
            </select>
            </div>
            </div>
@@ -120,7 +120,7 @@ const InputModal = () => {
                 <label htmlFor=""> Set Image </label>
            <input type="text" className={styles.textInput} onChange={handleImageChange}/>
             </form>
-        </section>
+       </>
     )
 }
 
