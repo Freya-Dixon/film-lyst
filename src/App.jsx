@@ -10,14 +10,13 @@ import styles from './App.module.scss'
 import UserDashboard from './Containers/UserDashboard'
 import TVList from './Components/TVList'
 import FilmList from './Components/FilmList'
-import FilmCard from './Components/FilmList/FilmCard'
-import filmData from './assets/filmData';
+import UsageGuide from './Containers/UsageGuide'
 import HomeLandingPage from './Containers/HomeLandingPage'
 
 function App() {
 
   const [films, setFilms] = useState([])
-
+  const [refreshFilms, setRefreshFilms] = useState([])
  
   useEffect(() => {
     fetch('http://localhost:8080/films')
@@ -26,10 +25,7 @@ function App() {
       setFilms(data) 
 
     })
-  }, []);
-
-
-console.log(films[0]);
+  }, [refreshFilms]);
 
   return (
     <>
@@ -39,11 +35,14 @@ console.log(films[0]);
     <HomeLandingPage />
     </Route>
     <Route path="/filmLyst">
-    { films && <UserDashboard films={films} /> 
+    { films && <UserDashboard films={films} setRefreshFilms={setRefreshFilms}/> 
    }
     </Route>
     <Route path="/tvlyst">
       <FilmList/>
+    </Route>
+    <Route path="/usageGuide">
+      <UsageGuide />
     </Route>
     </Switch>
     </Router>

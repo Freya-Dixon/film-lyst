@@ -12,7 +12,7 @@ const UserDashboard = (props) => {
         <section className={styles.dashboardOverview}>
                 <div>
                 <FilmList inputValue={props.inputValue} genreValue={props.genreValue} streamingValue={props.streamingValue} handleStreamingChange={props.handleStreamingChange}
-        handlechange={props.handlechange} handleGenreChange={props.handleGenreChange} runTimeValue={props.runTimeValue}  handleTimeChange={props.handleTimeChange} films={props.films}/>
+        handlechange={props.handlechange} handleGenreChange={props.handleGenreChange} runTimeValue={props.runTimeValue}  handleTimeChange={props.handleTimeChange} films={props.films} setRefreshFilms={props.setRefreshFilms}/>
                 </div> 
                 <div className={styles.modalWrapper}>         
                 </div>

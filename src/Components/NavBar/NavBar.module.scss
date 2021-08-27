@@ -25,7 +25,7 @@
     margin: 0 auto;
     margin-top: 5vh;
     display: flex;
-    color: whitesmoke;
+    color: white;
     justify-content: space-between;
     align-items: center;
     font-size: 1.7;
@@ -46,6 +46,7 @@
     }
     .navItem {
         color: white;
+        text-decoration: none;
     }
 }
 }

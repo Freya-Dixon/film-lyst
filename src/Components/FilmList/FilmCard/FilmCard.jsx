@@ -25,6 +25,7 @@ const FilmCard = (props) => {
             .then(response => response.json())
             .then(data => {
               console.log('Success:', data);
+              props.setRefreshFilms()
             })
             .catch((error) => {
               console.error('Error:', error);

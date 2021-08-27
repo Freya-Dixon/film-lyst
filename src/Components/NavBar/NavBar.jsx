@@ -12,14 +12,8 @@ const NavBar = () => {
         <div className={styles.navWrapper}>
             <ul className={styles.navList}>
                 <li><h2>Reel Lyst</h2></li>
-                <li>
-            <select name="lysts" id="lists" className={styles.dropdown}>
-            <option> Film Lyst</option> 
-            <option> TV Lyst </option> 
-           <option> Shared Lysts</option>
-          </select>
-                </li>
-                <li>Usage Guide</li>
+            <NavLink to="/filmLyst" className={styles.navItem}><li>My List</li></NavLink>
+                <NavLink to="/usageGuide" className={styles.navItem}><li>Usage Guide</li></NavLink>
                 <NavLink to="/" className={styles.navItem}><li><FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></li></NavLink>
             </ul>
         </div>

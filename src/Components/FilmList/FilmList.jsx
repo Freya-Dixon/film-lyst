@@ -11,7 +11,7 @@ import InputModal from '../InputModal'
 const FilmList = (props) => {
 
       const CardJSX = props.films.map((film) => {
-    return <FilmCard films={film}/>
+    return <FilmCard films={film} setRefreshFilms={props.setRefreshFilms}/>
   })
 
     return (

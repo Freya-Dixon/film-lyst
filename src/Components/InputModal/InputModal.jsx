@@ -5,7 +5,7 @@ import React, {useState, useEffect} from 'react';
 const InputModal = () => {
     
     const [inputValue, setInputValue] = useState("")
-    let   [idValue, setIdValue] = useState(82)
+    let   [idValue, setIdValue] = useState(0)
     const [genreValue, setGenreValue] = useState("")
     const [streamingValue, setStreamingValue] = useState("")
     const [runTimeValue, setRunTimeValue] = useState("")
