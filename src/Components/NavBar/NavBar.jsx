@@ -19,7 +19,7 @@ const NavBar = () => {
            <option> Shared Lysts</option>
           </select>
                 </li>
-                <li></li>
+                <li>Usage Guide</li>
                 <NavLink to="/" className={styles.navItem}><li><FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></li></NavLink>
             </ul>
         </div>
