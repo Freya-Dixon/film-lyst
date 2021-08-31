@@ -3,9 +3,9 @@
 
 .modalWrapper {
     margin: 0 auto;
-    width: 20vw;
+    width: 30vw;
     height: 50vh;
-    margin-top: 20vh;
+    margin-top: 15vh;
     padding: 5vh;
     box-shadow: rgba(171, 9, 235, 0.555) 0px 7px 29px 0px;
     border-radius: 10px;
@@ -13,12 +13,12 @@
     flex-direction: column;
     color: lightgray;
     justify-content: center;
-    margin-left: 10vw;
+    margin-left: 20vw;
 }
 .heading {
     margin: 0 auto;
     font-size: 1.5em;
-    width: 15vw;
+    width: 20vw;
     height: 4vh;
     padding: 1vh;
 }
@@ -31,7 +31,7 @@
 .icon {
     color: salmon;
     margin: 0 auto;
-    width: 4vw;
+    width: 5vw;
     font-size: 2em;
     height: 4vh;
     &:hover {
@@ -47,6 +47,7 @@ background-color: none;
 border: none;
 width: 10vw;
 margin-bottom: 1vh;
+
 }
 .dropdownContainer {
     margin: 0;

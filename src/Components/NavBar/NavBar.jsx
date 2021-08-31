@@ -12,8 +12,8 @@ const NavBar = () => {
         <div className={styles.navWrapper}>
             <ul className={styles.navList}>
                 <li><h2>Reel Lyst</h2></li>
-            <NavLink to="/filmLyst" className={styles.navItem}><li>My List</li></NavLink>
-                <NavLink to="/usageGuide" className={styles.navItem}><li>Usage Guide</li></NavLink>
+            <NavLink to="/filmLyst" className={styles.navItem}><li>My Lyst</li></NavLink>
+                <NavLink to="/usageGuide" target="_blank" className={styles.navItem}><li>Usage Guide</li></NavLink>
                 <NavLink to="/" className={styles.navItem}><li><FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></li></NavLink>
             </ul>
         </div>
