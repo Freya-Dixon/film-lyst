@@ -5,6 +5,7 @@ import React, {useState} from 'react';
 const InputModal = () => {
     
     const [inputValue, setInputValue] = useState("")
+    let   [idValue, setIdValue] = useState(0)
     const [genreValue, setGenreValue] = useState("")
     const [streamingValue, setStreamingValue] = useState("")
     const [runTimeValue, setRunTimeValue] = useState("")
@@ -64,16 +65,17 @@ const InputModal = () => {
       }
     return (
       <>
-            <form onSubmit={postFilm} className={styles.modalWrapper}>
+            <form onSubmit={postFilm} className={styles.form}>
                 <div className={styles.headingWrapper}>
-             <h3 className={styles.heading}>Add a film </h3>
-             <button type="submit" className={styles.submitButton}><FontAwesomeIcon className={styles.icon} icon={faPlusSquare}></FontAwesomeIcon></button>
-             </div>
+                <h3 className={styles.form__title}>Add a film </h3>
+                <button type="submit" className={styles.form__submit__btn}><FontAwesomeIcon className={styles.form__icon} icon={faPlusSquare}></FontAwesomeIcon></button>
+                </div>
                 <label htmlFor=""> Film Name </label>
-                <input type="text" className={styles.textInput} placeholder="Film" onChange={handlechange} />
+                <input type="text" className={styles.form__input} placeholder="Film" onChange={handlechange} />
  
             <div className={styles.dropdownContainer}>
  
+           
            <div>
            <label htmlFor=""> Genre </label>
            <select name="genres" id="genres" className={styles.dropdown} onChange={handleGenreChange}>
@@ -106,7 +108,7 @@ const InputModal = () => {
        <div className={styles.inputContainer}>
            <div>
            <label htmlFor=""> Release Year </label>
-           <input type="text" className={styles.time} onChange={handleDateChange}/>
+           <input type="text" className={styles.form__input__time} onChange={handleDateChange}/>
            </div>
            <div>
                 <label htmlFor=""> Run Time </label>
@@ -114,7 +116,7 @@ const InputModal = () => {
                 </div>
                 </div>
                 <label htmlFor=""> Set Image </label>
-           <input type="text" className={styles.textInput} onChange={handleImageChange}/>
+           <input type="text" className={styles.form__input} onChange={handleImageChange}/>
             </form>
        </>
     )

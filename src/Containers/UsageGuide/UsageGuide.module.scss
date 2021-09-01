@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 
 
-.guideContainer {
+.usageGuide {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     flex-direction: column;
     font-family: 'Spartan', sans-serif;
 }
-.heading {
+.usageGuide__title {
     margin: 0 auto;
     font-size: 5em;
     width: 80vw;
@@ -27,8 +27,6 @@
     background-size: contain;
     outline: none;
     font-weight: 1000;
-
-
 }
 .instructionList {
     list-style: none;

@@ -8,13 +8,13 @@ import {
 const NavBar = () => {
     return (
         <>
-        <section className={styles.sectionWrapper}>
-        <div className={styles.navWrapper}>
-            <ul className={styles.navList}>
+        <section className={styles.section}>
+        <div className={styles.nav}>
+            <ul className={styles.nav__list}>
                 <li><h2>Reel Lyst</h2></li>
-            <NavLink to="/filmLyst" className={styles.navItem}><li>My Lyst</li></NavLink>
-                <NavLink to="/usageGuide" target="_blank" className={styles.navItem}><li>Usage Guide</li></NavLink>
-                <NavLink to="/" className={styles.navItem}><li><FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></li></NavLink>
+            <NavLink to="/filmLyst" className={styles.nav__list__item}><li>My Lyst</li></NavLink>
+                <NavLink to="/usageGuide" target="_blank" className={styles.nav__list__item}><li>Usage Guide</li></NavLink>
+                <NavLink to="/" className={styles.nav__list__item}><li><FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></li></NavLink>
             </ul>
         </div>
         </section>

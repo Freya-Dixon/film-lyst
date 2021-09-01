@@ -15,7 +15,7 @@ const FilmList = (props) => {
         <div className={styles.iconContainer}>
         <h2 className={styles.filmList__title}>My Film Lyst </h2> 
         </div>
-        <ul className={styles.filmListUl}> 
+        <ul className={styles.filmList__Ul}> 
             <div className={styles.cardContainer}>
              {CardJSX}
              </div>

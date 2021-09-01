@@ -3,10 +3,10 @@ import styles from './UsageGuide.module.scss'
 import NavBar from '../../Components/NavBar'
 const UsageGuide = () => {
     return (
-        <div className={styles.guideContainer}>
+        <div className={styles.usageGuide}>
             <NavBar />
                    <section className={styles.usageContainer}>
-                       <h2 className={styles.heading}>Using Reel Lyst</h2>
+                       <h2 className={styles.usageGuide__title}>Using Reel Lyst</h2>
                    <ul className={styles.instructionList}>
                        <li className={styles.listItem}>Add a film</li>
                        <ul className={styles.subList}>

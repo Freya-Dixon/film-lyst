@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-.sectionWrapper {
+.section {
     height: 20vh;
     width: 50vw;
     font-family: 'Roboto', sans-serif;
@@ -7,7 +7,7 @@
     outline: transparent;
 
 }
-.navWrapper {
+.nav {
     margin: 0 auto;
     width: 50vw;
     height: 15vh;
@@ -19,7 +19,7 @@
     border-bottom: 2px solid #464676;
     justify-content: center;
     
-.navList {
+.nav__list {
     width: 40vw;
     height: 3vh;
     list-style: none;
@@ -45,7 +45,7 @@
         padding: 0.5vh;
         border: none;
     }
-    .navItem {
+    .nav__list__item {
         color: white;
         text-decoration: none;
     }
