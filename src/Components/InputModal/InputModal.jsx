@@ -1,20 +1,16 @@
 import styles from './InputModal.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEdit, faPlusSquare } from '@fortawesome/free-solid-svg-icons'
-import React, {useState, useEffect} from 'react';
+import {faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import React, {useState} from 'react';
 const InputModal = () => {
     
     const [inputValue, setInputValue] = useState("")
-    let   [idValue, setIdValue] = useState(0)
     const [genreValue, setGenreValue] = useState("")
     const [streamingValue, setStreamingValue] = useState("")
     const [runTimeValue, setRunTimeValue] = useState("")
     const [filmReleaseValue, setfilmReleaseValue] = useState("")
     const [filmImageValue, setfilmImageValue] = useState("")
 
-    function getRandom() {
-      return Math.random();
-    }
 
     const handlechange = (e) => {
 

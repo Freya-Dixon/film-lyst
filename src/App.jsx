@@ -4,11 +4,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import styles from './App.module.scss'
 import UserDashboard from './Containers/UserDashboard'
-import TVList from './Components/TVList'
 import FilmList from './Components/FilmList'
 import UsageGuide from './Containers/UsageGuide'
 import HomeLandingPage from './Containers/HomeLandingPage'
