@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .sectionWrapper {
-    width: 40vw;
+    height: 20vh;
+    width: 50vw;
     font-family: 'Roboto', sans-serif;
     border: none;
     outline: transparent;
@@ -9,21 +10,21 @@
 .navWrapper {
     margin: 0 auto;
     width: 50vw;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     margin-left: 10vh;
     color: white;
     background-color: transparent;
     border-bottom: 2px solid #464676;
-    justify-content: space-evenly;
+    justify-content: center;
     
 .navList {
     width: 40vw;
-    height: 1vh;
+    height: 3vh;
     list-style: none;
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 8vh;
     display: flex;
     color: white;
     justify-content: space-between;

@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './HomeLandingPage.module.scss'
-import NavBar from '../../Components/NavBar'
 import {
     NavLink
   } from "react-router-dom";

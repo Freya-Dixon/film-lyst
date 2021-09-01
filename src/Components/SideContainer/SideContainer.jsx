@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './SideContainer.module.scss'
-import InputModal from '../InputModal'
 const SideContainer = (props) => {
     return (
         <>

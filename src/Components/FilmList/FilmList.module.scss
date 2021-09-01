@@ -1,17 +1,17 @@
 
 
-.filmListWrapper {
+.filmList {
     margin: 0 auto;
     width: 50vw;
-    height: 80%;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: transparent;
     margin-left: 3vw;
-    margin-top: 7vh;
+    margin-top: 0.5vh;
 }
-.subheading {
+.filmList__title {
     width: 50vw;
     height: 5vh;
     margin: 0 auto;
@@ -19,11 +19,7 @@
     color: lightgray;
     text-transform: uppercase;
 }
-.modalContainer {
-    margin: 0 auto;
-    width: 45vw;
-    height: 30vh;
-}
+
 .iconContainer {
     margin: 0 auto;
     padding: 3vh;
@@ -63,7 +59,7 @@
 }
 .filmListUl {
     list-style: none;
-    height: 90vh;
+    height: 80vh;
     width: 40vw;
     margin: 0;
     border-radius: 20px;
